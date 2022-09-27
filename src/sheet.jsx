@@ -42,10 +42,8 @@ function Flow() {
     [setEdges]
   );
 
-  // TODO ReactFlowの親要素の width と heightを100%にする
   return (
-    <>
-      <h1>Flow</h1>
+    <div style={{ height: "100vh" }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -56,7 +54,7 @@ function Flow() {
         <MiniMap />
         <Controls />
       </ReactFlow>
-    </>
+    </div>
   );
 }
 
